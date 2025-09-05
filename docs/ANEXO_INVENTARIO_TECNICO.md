@@ -224,7 +224,7 @@ NODE_ENV=production
 # /etc/nginx/sites-available/boston-tracker
 server {
     listen 80;
-    server_name 185.144.157.163;
+    server_name 185.144.157.71;
     root /var/www/boston-tracker/frontend/build;
     index index.html;
     
@@ -283,7 +283,7 @@ WantedBy=multi-user.target
    - Tamaño: ~66MB
    - Estado: ✅ Completamente funcional
    - Permisos: HTTP + Ubicación completos
-   - Descarga: http://185.144.157.163/apk/
+   - Descarga: http://185.144.157.71/apk/
 
 📱 Versiones anteriores disponibles:
    - BOSTON-Tracker-v20250902-0759-HTTP-FIXED.apk

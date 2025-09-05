@@ -79,7 +79,7 @@ echo ""
 echo -e "${BLUE}🧪 PASO 5: Verificando deployment...${NC}"
 
 # Verificar que el APK esté disponible vía web
-HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" "http://185.144.157.163/apk/boston-tracker-latest.apk")
+HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" "http://185.144.157.71/apk/boston-tracker-latest.apk")
 
 if [ "$HTTP_STATUS" = "200" ]; then
     echo -e "${GREEN}✅ APK disponible vía web${NC}"
@@ -88,7 +88,7 @@ else
 fi
 
 # Verificar página de contratos
-CONTRATOS_STATUS=$(curl -o /dev/null -s -w "%{http_code}" "http://185.144.157.163/contratos/")
+CONTRATOS_STATUS=$(curl -o /dev/null -s -w "%{http_code}" "http://185.144.157.71/contratos/")
 
 if [ "$CONTRATOS_STATUS" = "200" ]; then
     echo -e "${GREEN}✅ Página de contratos disponible${NC}"
@@ -101,9 +101,9 @@ echo -e "${PURPLE}🎉 BUILD Y DEPLOY COMPLETADO${NC}"
 echo ""
 echo -e "${GREEN}📱 Nueva versión disponible:${NC}"
 echo -e "${YELLOW}   Versión: $CURRENT_VERSION${NC}"
-echo -e "${YELLOW}   APK: http://185.144.157.163/apk/boston-tracker-latest.apk${NC}"
-echo -e "${YELLOW}   Contratos: http://185.144.157.163/contratos/${NC}"
-echo -e "${YELLOW}   Dashboard: http://185.144.157.163/${NC}"
+echo -e "${YELLOW}   APK: http://185.144.157.71/apk/boston-tracker-latest.apk${NC}"
+echo -e "${YELLOW}   Contratos: http://185.144.157.71/contratos/${NC}"
+echo -e "${YELLOW}   Dashboard: http://185.144.157.71/${NC}"
 echo ""
 echo -e "${BLUE}📋 Archivos generados:${NC}"
 echo "   • boston-tracker-latest.apk (última versión)"

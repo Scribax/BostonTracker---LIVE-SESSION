@@ -124,7 +124,7 @@ grep '"status":"OK"' # Verificar respuesta válida
 ### 📊 **Ver Estado Actual:**
 ```bash
 systemctl status boston-tracker-backend.service
-curl http://185.144.157.163:5000/api/health
+curl http://185.144.157.71:5000/api/health
 ```
 
 ### 📋 **Ver Logs de Monitoreo:**

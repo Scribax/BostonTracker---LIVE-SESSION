@@ -13,8 +13,8 @@ Aplicación móvil React Native para repartidores de BOSTON American Burgers. Pe
 ## 📱 **Descarga e Instalación**
 
 ### Descarga Directa
-- **📱 APK Oficial:** http://185.144.157.163/apk/boston-tracker-latest.apk
-- **📄 Términos de Uso:** http://185.144.157.163/contratos/
+- **📱 APK Oficial:** http://185.144.157.71/apk/boston-tracker-latest.apk
+- **📄 Términos de Uso:** http://185.144.157.71/contratos/
 
 ### Requisitos del Sistema
 - **Android:** 6.0 (API 23) o superior
@@ -70,8 +70,8 @@ npm install
 ### 2. Configurar variables de entorno
 ```bash
 # Crear archivo .env
-echo "API_URL=http://185.144.157.163:3001" > .env
-echo "SOCKET_URL=http://185.144.157.163:3001" >> .env
+echo "API_URL=http://185.144.157.71:3001" > .env
+echo "SOCKET_URL=http://185.144.157.71:3001" >> .env
 ```
 
 ### 3. Ejecutar en desarrollo
@@ -142,7 +142,7 @@ eas build --platform android
 <!-- android/app/src/main/res/xml/network_security_config.xml -->
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">185.144.157.163</domain>
+        <domain includeSubdomains="true">185.144.157.71</domain>
         <domain includeSubdomains="true">localhost</domain>
     </domain-config>
 </network-security-config>
@@ -173,7 +173,7 @@ const locationOptions = {
 ### API Calls
 ```javascript
 // Configuración base
-const API_BASE_URL = 'http://185.144.157.163:3001'
+const API_BASE_URL = 'http://185.144.157.71:3001'
 
 // Autenticación
 await loginUser(email, password)
@@ -189,7 +189,7 @@ const trips = await getUserTrips()
 ```javascript
 import io from 'socket.io-client'
 
-const socket = io('http://185.144.157.163:3001')
+const socket = io('http://185.144.157.71:3001')
 socket.emit('join-trip', tripId)
 socket.on('location-update', (data) => {
   // Actualizar mapa en tiempo real

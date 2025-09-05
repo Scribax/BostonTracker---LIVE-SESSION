@@ -20,7 +20,7 @@
 - [ ] **Verificar acceso completo** al código fuente
 - [ ] **Confirmar historial de commits** accesible
 
-#### Servidor de Producción (185.144.157.163)
+#### Servidor de Producción (185.144.157.71)
 - [ ] **Credenciales SSH** entregadas
 - [ ] **Acceso root** transferido
 - [ ] **Documentar configuraciones** de sistema
@@ -121,7 +121,7 @@
 ### 🧪 **ETAPA 8: TESTING Y VERIFICACIÓN**
 
 #### Tests de Conectividad
-- [ ] **Health check** - `curl http://185.144.157.163:5000/api/health`
+- [ ] **Health check** - `curl http://185.144.157.71:5000/api/health`
 - [ ] **Login API** - Franco DEL001 login exitoso  
 - [ ] **WebSocket** - Conexiones en tiempo real
 - [ ] **Mobile APK** - Instalación y uso completo
@@ -172,7 +172,7 @@
 ```
 1. ✅ APK instala y funciona completamente
 2. ✅ Franco (DEL001) puede hacer login mobile
-3. ✅ Backend responde en 185.144.157.163:5000  
+3. ✅ Backend responde en 185.144.157.71:5000  
 4. ✅ Dashboard admin accesible en puerto 80
 5. ✅ WebSocket funciona mobile ↔ dashboard
 6. ✅ Tracking GPS muestra en mapa tiempo real
@@ -195,7 +195,7 @@
 
 ```bash
 # SERVIDOR SSH
-Host: 185.144.157.163
+Host: 185.144.157.71
 User: root
 Key: [ENTREGADA POR SEPARADO]
 

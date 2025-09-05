@@ -12,7 +12,7 @@ Directorio oficial de descargas para la aplicación móvil Boston Tracker.
 
 ### 🌐 URL de Descarga
 ```
-http://185.144.157.163/apk/boston-tracker-latest.apk
+http://185.144.157.71/apk/boston-tracker-latest.apk
 ```
 
 ## 📋 Requisitos del Sistema
@@ -34,7 +34,7 @@ La aplicación solicita los siguientes permisos:
 ## 📄 Términos y Condiciones
 
 Antes de instalar, revisa nuestros términos:
-- **📄 Contratos:** http://185.144.157.163/contratos/
+- **📄 Contratos:** http://185.144.157.71/contratos/
 
 ## 🔧 Instalación
 
@@ -45,7 +45,7 @@ Configuración → Seguridad → Fuentes desconocidas → Activar
 
 ### 2. Descargar APK
 ```
-Navegador → http://185.144.157.163/apk/boston-tracker-latest.apk
+Navegador → http://185.144.157.71/apk/boston-tracker-latest.apk
 ```
 
 ### 3. Instalar

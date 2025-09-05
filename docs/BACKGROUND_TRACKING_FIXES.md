@@ -168,4 +168,4 @@ Configuración → Administración de energía
 **Versión:** v1.0.1  
 **Fecha:** $(date '+%d/%m/%Y %H:%M')  
 **Estado:** ✅ Implementado y desplegado  
-**APK:** http://185.144.157.163/apk/boston-tracker-latest.apk
+**APK:** http://185.144.157.71/apk/boston-tracker-latest.apk

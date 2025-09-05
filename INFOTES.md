@@ -4,8 +4,8 @@
 
 Sistema integral de seguimiento en tiempo real para deliveries de restaurantes, desarrollado específicamente para **Boston American Burgers**. Solución full-stack que incluye dashboard administrativo web, API backend robusta y aplicación móvil nativa para repartidores.
 
-**🌐 Demo en producción:** http://185.144.157.163/  
-**📱 APK disponible:** http://185.144.157.163/apk/  
+**🌐 Demo en producción:** http://185.144.157.71/  
+**📱 APK disponible:** http://185.144.157.71/apk/  
 **📚 Repositorio:** https://github.com/Scribax/BostonTracker
 
 ---
@@ -534,8 +534,8 @@ expo build:android
 
 ## 📞 CONTACTO Y DEMO
 
-**🌐 Aplicación en producción:** http://185.144.157.163/  
-**📱 Descargar APK:** http://185.144.157.163/apk/  
+**🌐 Aplicación en producción:** http://185.144.157.71/  
+**📱 Descargar APK:** http://185.144.157.71/apk/  
 **💻 Código fuente:** https://github.com/Scribax/BostonTracker
 
 **Credenciales de demo:**

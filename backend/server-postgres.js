@@ -23,9 +23,9 @@ const io = socketIo(server, {
       "http://localhost:3000",
       "http://192.168.1.36:3000",
       "exp://192.168.1.36:8081",
-    "http://185.144.157.163",
-    "http://185.144.157.163:3000",
-    "http://185.144.157.163:5000"
+    "http://185.144.157.71",
+    "http://185.144.157.71:3000",
+    "http://185.144.157.71:5000"
     ],
     methods: ["GET", "POST"]
   }
@@ -52,9 +52,9 @@ app.use(cors({
     "http://localhost:3000",
     "http://192.168.1.36:3000",
     "exp://192.168.1.36:8081",
-    "http://185.144.157.163",
-    "http://185.144.157.163:3000",
-    "http://185.144.157.163:5000"
+    "http://185.144.157.71",
+    "http://185.144.157.71:3000",
+    "http://185.144.157.71:5000"
   ],
   credentials: true
 }));
@@ -85,18 +85,15 @@ app.use(limiter);
 
 app.use(express.json({ limit: '10mb' }));
 
-// MIDDLEWARE DE LOGGING DETALLADO
+// MIDDLEWARE DE LOGGING OPTIMIZADO PARA PRODUCCION
+const DEBUG_MODE = process.env.NODE_ENV === "development";
 app.use((req, res, next) => {
-  const timestamp = new Date().toISOString();
-  console.log(`📝 ${timestamp} - ${req.method} ${req.originalUrl}`);
-  console.log(`   Headers:`, JSON.stringify(req.headers, null, 2));
-  if (Object.keys(req.body).length > 0) {
-    console.log(`   Body:`, JSON.stringify(req.body, null, 2));
+  if (DEBUG_MODE) {
+    const timestamp = new Date().toISOString();
+    console.log(`📝 ${timestamp} - ${req.method} ${req.originalUrl}`);
   }
   next();
 });
-app.use(express.urlencoded({ extended: true }));
-
 // MODELOS DE SEQUELIZE
 
 // Modelo Usuario
@@ -304,7 +301,7 @@ function filterGPSNoise(locations, minDistanceMeters = 15) {
         if (speedKmh <= 60) {
           filtered.push(current);
         } else {
-          console.log(`⚠️ GPS: Velocidad filtrada ${speedKmh.toFixed(1)} km/h`);
+          // console.log(`⚠️ GPS: Velocidad filtrada ${speedKmh.toFixed(1)} km/h`);
         }
       } else {
         filtered.push(current);
@@ -1280,12 +1277,12 @@ app.delete('/api/auth/users/:id', protect, async (req, res) => {
 
 // Socket.io
 io.on('connection', (socket) => {
-  console.log('🔌 Cliente conectado:', socket.id);
+  // console.log('🔌 Cliente conectado:', socket.id);
 
   // Admin se une a la sala de admins
   socket.on('join-admin', () => {
     socket.join('admins');
-    console.log('👔 Admin se unió al room');
+    // console.log('👔 Admin se unió al room');
   });
 
   // Trip se une a su sala específica
@@ -1298,7 +1295,7 @@ io.on('connection', (socket) => {
 
   // Manejar desconexión
   socket.on('disconnect', () => {
-    console.log('🔌 Cliente desconectado:', socket.id);
+    // console.log('🔌 Cliente desconectado:', socket.id);
   });
 });
 
@@ -1607,7 +1604,7 @@ app.post("/api/apk/send-whatsapp", protect, async (req, res) => {
     }
 
     // URL del APK
-    const apkUrl = process.env.APK_URL || "http://185.144.157.163/apk/boston-tracker-latest.apk";
+    const apkUrl = process.env.APK_URL || "http://185.144.157.71/apk/boston-tracker-latest.apk";
     
     // Mensaje predeterminado optimizado para WhatsApp
     const defaultMessage = `Hola! Te envio la aplicacion Boston Tracker para delivery.
@@ -1664,7 +1661,7 @@ app.get("/api/apk/info", protect, async (req, res) => {
       });
     }
     
-    const apkUrl = process.env.APK_URL || "http://185.144.157.163/apk/boston-tracker-latest.apk";
+    const apkUrl = process.env.APK_URL || "http://185.144.157.71/apk/boston-tracker-latest.apk";
     const apkPath = "/var/www/boston-tracker/apk/boston-tracker-latest.apk";
     
     // Obtener información del archivo APK

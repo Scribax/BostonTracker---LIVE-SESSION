@@ -78,7 +78,7 @@ class APKService {
       const cleanPhone = phoneNumber.replace(/[^\d+]/g, '');
       
       // URL del APK
-      const apkUrl = 'http://185.144.157.163/apk/boston-tracker-latest.apk';
+      const apkUrl = 'http://185.144.157.71/apk/boston-tracker-latest.apk';
       
       // Mensaje predefinido
       const defaultMessage = `*BOSTON American Burgers - App Delivery*

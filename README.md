@@ -15,10 +15,10 @@ Sistema completo de seguimiento en tiempo real para deliveries de **BOSTON Ameri
 
 ## 🌐 URLs del Sistema
 
-- **🌐 Dashboard Web:** http://185.144.157.163/
-- **📄 Contratos y Términos:** http://185.144.157.163/contratos/
-- **📱 Descarga APK:** http://185.144.157.163/apk/boston-tracker-latest.apk
-- **🔌 API Backend:** http://185.144.157.163:5000/api/
+- **🌐 Dashboard Web:** http://185.144.157.71/
+- **📄 Contratos y Términos:** http://185.144.157.71/contratos/
+- **📱 Descarga APK:** http://185.144.157.71/apk/boston-tracker-latest.apk
+- **🔌 API Backend:** http://185.144.157.71:5000/api/
 
 ## 🚀 Últimas Mejoras Implementadas
 

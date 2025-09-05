@@ -157,7 +157,7 @@ CREATE TABLE locations (
 ### Variables de Entorno
 ```bash
 # Servidor
-SERVER_IP=185.144.157.163
+SERVER_IP=185.144.157.71
 SERVER_PORT=5000
 
 # Base de datos PostgreSQL
@@ -172,8 +172,8 @@ JWT_SECRET=boston_tracker_super_secret_key_production_2024
 JWT_EXPIRE=7d
 
 # URLs del sistema
-FRONTEND_URL=http://185.144.157.163
-BACKEND_URL=http://185.144.157.163:5000
+FRONTEND_URL=http://185.144.157.71
+BACKEND_URL=http://185.144.157.71:5000
 
 # Configuración inicial
 RESET_DATABASE=false

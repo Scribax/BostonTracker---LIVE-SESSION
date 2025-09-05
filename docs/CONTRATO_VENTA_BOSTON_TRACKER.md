@@ -105,7 +105,7 @@ El VENDEDOR transfiere al COMPRADOR de forma **TOTAL, DEFINITIVA E IRREVOCABLE**
 ### 4.1 RESPONSABILIDADES DEL VENDEDOR
 El VENDEDOR se **EXIME** de las siguientes responsabilidades a partir de la fecha de firma:
 
-- ❌ **Mantenimiento del servidor** de producción (185.144.157.163)
+- ❌ **Mantenimiento del servidor** de producción (185.144.157.71)
 - ❌ **Hosting y infraestructura** del sistema
 - ❌ **Soporte técnico** post-venta
 - ❌ **Actualizaciones de software** o corrección de bugs
@@ -130,8 +130,8 @@ A partir de la fecha de firma, el COMPRADOR asume **TOTAL RESPONSABILIDAD**:
 ### 5.1 FUNCIONALIDAD VERIFICADA
 Al momento de la firma, el sistema se encuentra en estado **COMPLETAMENTE FUNCIONAL**:
 
-- ✅ **Backend:** Operativo en 185.144.157.163:5000
-- ✅ **Frontend:** Accesible en http://185.144.157.163/
+- ✅ **Backend:** Operativo en 185.144.157.71:5000
+- ✅ **Frontend:** Accesible en http://185.144.157.71/
 - ✅ **Mobile App:** APK funcional para Android
 - ✅ **Base de datos:** PostgreSQL con datos de prueba
 - ✅ **WebSocket:** Comunicación en tiempo real activa
@@ -154,9 +154,9 @@ Base: boston_tracker
 
 ### 5.3 URLS EN PRODUCCIÓN
 ```
-🌐 Dashboard: http://185.144.157.163/
-🔌 API Backend: http://185.144.157.163:5000/api
-📱 Descarga APK: http://185.144.157.163/apk/
+🌐 Dashboard: http://185.144.157.71/
+🔌 API Backend: http://185.144.157.71:5000/api
+📱 Descarga APK: http://185.144.157.71/apk/
 📋 GitHub Repo: https://github.com/Scribax/BostonTracker
 ```
 

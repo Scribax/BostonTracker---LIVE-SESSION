@@ -356,8 +356,8 @@ const defaultZoom = 13;
 - **Socket Local**: http://localhost:5000
 
 ### Producción  
-- **Dashboard**: http://185.144.157.163/
-- **API**: http://185.144.157.163:5000/api
+- **Dashboard**: http://185.144.157.71/
+- **API**: http://185.144.157.71:5000/api
 - **Documentación**: https://github.com/Scribax/BostonTracker
 
 ---

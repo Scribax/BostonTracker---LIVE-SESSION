@@ -33,7 +33,7 @@ Este es un **backup completo** del proyecto **Boston Tracker** tal como quedó d
 #### 📊 **Sistema de Status**
 - **Página de status:** `frontend/build/status.html`
 - **Monitoreo:** 6 servicios en tiempo real
-- **URL:** http://185.144.157.163/status.html
+- **URL:** http://185.144.157.71/status.html
 
 ---
 
@@ -105,11 +105,11 @@ BostonTracker---LIVE-SESSION/
 
 ## 🌍 **URLs del Sistema (en producción)**
 
-- **🌐 Dashboard:** http://185.144.157.163/
-- **📊 Status Page:** http://185.144.157.163/status.html *(NUEVO)*
-- **📱 APK Download:** http://185.144.157.163/apk/
-- **📄 Contratos:** http://185.144.157.163/contratos/
-- **🔌 API Health:** http://185.144.157.163:5000/api/health
+- **🌐 Dashboard:** http://185.144.157.71/
+- **📊 Status Page:** http://185.144.157.71/status.html *(NUEVO)*
+- **📱 APK Download:** http://185.144.157.71/apk/
+- **📄 Contratos:** http://185.144.157.71/contratos/
+- **🔌 API Health:** http://185.144.157.71:5000/api/health
 
 ---
 
@@ -170,7 +170,7 @@ tail -f /var/log/boston-tracker-monitor.log
 systemctl restart boston-tracker-backend.service
 
 # Verificar salud de la API
-curl http://185.144.157.163:5000/api/health
+curl http://185.144.157.71:5000/api/health
 ```
 
 ---

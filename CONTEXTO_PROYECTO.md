@@ -12,13 +12,13 @@
 - **Tablas:** Users, Trips, Locations (con mayúsculas)
 
 #### 🌐 **FRONTEND WEB (Dashboard Admin)**
-- **URL:** http://185.144.157.163
+- **URL:** http://185.144.157.71
 - **Estado:** ✅ DEPLOYADO en /var/www/html/
 - **Login Admin:** admin@bostonburgers.com / password123
 - **Funcionalidad:** Mapa en tiempo real con nombres de deliveries ARRIBA de íconos
 
 #### 📱 **APP MÓVIL ANDROID**
-- **APK:** http://185.144.157.163/apk/boston-tracker-latest.apk
+- **APK:** http://185.144.157.71/apk/boston-tracker-latest.apk
 - **Login Delivery:** DEL001 / delivery123
 - **Estado:** ✅ TRACKING EN BACKGROUND REAL (pantalla apagada)
 - **Ubicación código:** `/var/www/boston-tracker/mobile-app/`
@@ -96,8 +96,8 @@ Status: active
 
 #### Puertos y URLs:
 - Backend API: http://localhost:5000/api
-- Frontend: http://185.144.157.163
-- APK Download: http://185.144.157.163/apk/
+- Frontend: http://185.144.157.71
+- APK Download: http://185.144.157.71/apk/
 
 #### Comandos clave:
 ```bash
@@ -188,8 +188,8 @@ El proyecto está 100% funcional y operativo. El delivery DEL001 está activo en
 #### 🌍 **Estado del Sistema Actualizado:**
 
 **URLs con nueva funcionalidad:**
-- **Dashboard:** http://185.144.157.163/ → Nueva pestaña "Historial de Viajes"
-- **API Endpoints:** http://185.144.157.163:5000/api/trips/*
+- **Dashboard:** http://185.144.157.71/ → Nueva pestaña "Historial de Viajes"
+- **API Endpoints:** http://185.144.157.71:5000/api/trips/*
 
 **Datos reales disponibles:**
 - **646 viajes completados** en base de datos
@@ -233,7 +233,7 @@ El proyecto está 100% funcional y operativo. El delivery DEL001 está activo en
 ---
 
 **PRÓXIMO PASO RECOMENDADO:** 
-Probar la funcionalidad accediendo a http://185.144.157.163/ → Login → Pestaña "Historial de Viajes"
+Probar la funcionalidad accediendo a http://185.144.157.71/ → Login → Pestaña "Historial de Viajes"
 
 
 ## 📱 **SEGUNDA FUNCIONALIDAD AGREGADA (02/09/2025 16:40)**
@@ -263,9 +263,9 @@ Probar la funcionalidad accediendo a http://185.144.157.163/ → Login → Pesta
    - ✅ **Validaciones completas** de teléfonos y permisos
 
 #### 🌐 **URLs Actualizadas:**
-- **Dashboard con APK:** http://185.144.157.163/ → Nueva pestaña "Gestión APK"
-- **APK directo:** http://185.144.157.163/apk/boston-tracker-latest.apk (69.1 MB)
-- **API APK:** http://185.144.157.163:5000/api/apk/*
+- **Dashboard con APK:** http://185.144.157.71/ → Nueva pestaña "Gestión APK"
+- **APK directo:** http://185.144.157.71/apk/boston-tracker-latest.apk (69.1 MB)
+- **API APK:** http://185.144.157.71:5000/api/apk/*
 
 #### 📱 **Flujo de Envío via WhatsApp:**
 
@@ -287,7 +287,7 @@ Probar la funcionalidad accediendo a http://185.144.157.163/ → Login → Pesta
 Te envío la aplicación oficial de BOSTON Tracker para que puedas comenzar a trabajar como delivery.
 
 📱 Descarga la app aquí:
-http://185.144.157.163/apk/boston-tracker-latest.apk
+http://185.144.157.71/apk/boston-tracker-latest.apk
 
 📋 Instrucciones:
 1️⃣ Descarga el archivo APK
@@ -327,7 +327,7 @@ BOSTON American Burgers 🍔
 
 #### 🚀 **Instrucciones de Prueba:**
 
-1. **Acceder al dashboard:** http://185.144.157.163/
+1. **Acceder al dashboard:** http://185.144.157.71/
 2. **Login admin:** admin@bostonburgers.com / password123
 3. **Ir a pestaña "Gestión APK"**
 4. **Probar envío** a número de prueba o delivery registrado

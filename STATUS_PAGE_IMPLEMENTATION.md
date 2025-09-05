@@ -3,7 +3,7 @@
 ## ✅ IMPLEMENTACIÓN COMPLETADA
 
 ### 🌍 **URL ACTIVA:**
-**http://185.144.157.163/status.html**
+**http://185.144.157.71/status.html**
 
 ---
 
@@ -52,9 +52,9 @@
 - Funciona completamente del lado cliente
 
 ### 🔗 **Navegación**
-- **Enlace al Dashboard:** http://185.144.157.163/
-- **Enlace al APK:** http://185.144.157.163/apk/
-- **Enlace a Contratos:** http://185.144.157.163/contratos/
+- **Enlace al Dashboard:** http://185.144.157.71/
+- **Enlace al APK:** http://185.144.157.71/apk/
+- **Enlace a Contratos:** http://185.144.157.71/contratos/
 
 ### ⚙️ **Configuración Nginx**
 ```
@@ -68,7 +68,7 @@
 ## 🚀 **FUNCIONAMIENTO**
 
 ### ✅ **Verificaciones Automáticas**
-1. **Cada 30 segundos** la página consulta `http://185.144.157.163:5000/api/health`
+1. **Cada 30 segundos** la página consulta `http://185.144.157.71:5000/api/health`
 2. **Si la API responde OK** → muestra todos los servicios como operacionales
 3. **Si la API no responde** → muestra error y sistema degradado
 4. **Estado visual actualizado** en tiempo real
@@ -95,10 +95,10 @@
 ### 📝 **Comandos Útiles**
 ```bash
 # Ver la página de status
-curl http://185.144.157.163/status.html
+curl http://185.144.157.71/status.html
 
 # Verificar API health manualmente
-curl http://185.144.157.163:5000/api/health
+curl http://185.144.157.71:5000/api/health
 
 # Ver estado del backend
 systemctl status boston-tracker-backend.service
@@ -111,7 +111,7 @@ nginx -t && systemctl reload nginx
 - **Colores:** Cambiar variables CSS en el <style>
 - **Servicios:** Agregar/quitar en el objeto `services` del JavaScript
 - **Frecuencia:** Cambiar `30000` (30 segundos) en setInterval
-- **URL base:** Cambiar `185.144.157.163` por tu dominio
+- **URL base:** Cambiar `185.144.157.71` por tu dominio
 
 ---
 
@@ -119,7 +119,7 @@ nginx -t && systemctl reload nginx
 
 ### ✅ **Estado Actual:**
 - **Backend:** ✅ Corriendo como servicio permanente con auto-restart
-- **Status Page:** ✅ Disponible en http://185.144.157.163/status.html
+- **Status Page:** ✅ Disponible en http://185.144.157.71/status.html
 - **Monitoreo:** ✅ Verificación automática cada 30 segundos
 - **Diseño:** ✅ Profesional estilo Discord/GitHub Status
 - **Funcionalidad:** ✅ Completamente operacional
@@ -136,4 +136,4 @@ nginx -t && systemctl reload nginx
 
 **🚀 ¡LA PÁGINA DE STATUS ESTÁ LISTA Y FUNCIONANDO!**
 
-Accede a: **http://185.144.157.163/status.html**
+Accede a: **http://185.144.157.71/status.html**

@@ -91,5 +91,5 @@ fi
 
 echo ""
 echo -e "${GREEN}🎯 Actualización automática completada!${NC}"
-echo -e "${YELLOW}📄 Página disponible en: http://185.144.157.163/contratos/${NC}"
-echo -e "${YELLOW}📱 APK disponible en: http://185.144.157.163/apk/boston-tracker-latest.apk${NC}"
+echo -e "${YELLOW}📄 Página disponible en: http://185.144.157.71/contratos/${NC}"
+echo -e "${YELLOW}📱 APK disponible en: http://185.144.157.71/apk/boston-tracker-latest.apk${NC}"
